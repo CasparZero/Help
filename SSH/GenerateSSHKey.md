@@ -10,11 +10,7 @@ $ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 $eval "$(ssh-agent -s)"
 
 4.Configuration:
-$vi .ssh/config
-Host *
- AddKeysToAgent yes
- UseKeychain yes
- IdentityFile ~/.ssh/id_rsa
+git config --list
 
 5. Add your SSH private key to ssh-agent and stor your passphrase in the keychain:
 $ ssh-add -K ~/.ssh/id_rsa
@@ -41,6 +37,9 @@ $git push origin master
 $git branch
 $git remote
 $git clone
+$git diff
+$git log
+$git pull
 
 11. Git create remote respository:
 $curl -u 'username' https://api.github.com/user/repos -d '{"name":"RepoName"}'
