@@ -32,11 +32,15 @@ $ git config --global user.email "your_email@youremail.com"
 9. Add local git respository to remote.
 $git remote add origin git@github.com:yourName/yourRepo.git
 
-10: Git push:
+10: Git command:
 $git init
 $git add . 
+$git status
 $git commit -m "your comments"
 $git push origin master
+$git branch
+$git remote
+$git clone
 
 11. Git create remote respository:
 $curl -u 'username' https://api.github.com/user/repos -d '{"name":"RepoName"}'
